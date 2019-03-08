@@ -1,31 +1,27 @@
 package za.ac.cput;
 
 /**
- * Hello world!
+ * Ryan Petersen
+ * 217027806
+ * 3G
+ * Chapter 3 Question2
  *
  */
 public class BankWithdrawal
 {
 
-
-
-
-
-
-
-
-    public static void main(String[] args) {
-
+    public String toString(){
         Account acc = new Account(0,0,0);
         Withdrawal withdraw = new Withdrawal(5500,500,0);
         AccountHolderDetails ahd = new AccountHolderDetails();
 
+        return ahd.accDetails() + "\n" + "Current Balance: R" + withdraw.balance + "\n" + "Withdrawal amount: R" + withdraw.withdrawal +
+                "\n" + "Bank Charges: R"+ withdraw.bankcost + "\n" + "Balance after withdrawal: R" + withdraw.withdraw();
+    }
+    public static void main(String[] args) {
 
+        BankWithdrawal bw = new BankWithdrawal();
+        System.out.println(bw.toString());
 
-        System.out.println(ahd.accDetails());
-        System.out.println("Current Balance: R" + withdraw.balance);
-        System.out.println("Withdrawal amount: R" + withdraw.withdrawal);
-        System.out.println("Bank Charges: R"+ withdraw.bankcost);
-        System.out.println("Balance after withdrawal: R" + withdraw.withdraw());
     }
 }

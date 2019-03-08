@@ -14,5 +14,9 @@ public class Account {
         this.withdrawal = withdrawal;
         this.bankcost = bankcost;
         }
+
+        public boolean Validation(){
+        return( balance > withdrawal);
+    }
     }
 

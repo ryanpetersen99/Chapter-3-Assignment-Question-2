@@ -13,8 +13,9 @@ public class AccountTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void test()
     {
-        assertTrue( true );
+        Account ac = new Account(900,100,10);
+        assertTrue( ac.Validation() );
     }
 }

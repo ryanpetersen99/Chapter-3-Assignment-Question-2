@@ -17,6 +17,6 @@ public class WithdrawalTest
     public void test()
     {
         Withdrawal withdraw = new Withdrawal(4000,500,0);
-        Assert.assertEquals(3500,withdraw.withdraw());
+        Assert.assertEquals(3490,withdraw.withdraw());
     }
 }

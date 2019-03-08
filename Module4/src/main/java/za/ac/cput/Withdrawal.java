@@ -13,8 +13,11 @@ public class Withdrawal extends Account {
     }
 
     public int withdraw() {
-            return balance - withdrawal - bankcost;
+        account.Validation();
+        return balance - withdrawal - bankcost;
         }
+
+
     }
 
 
